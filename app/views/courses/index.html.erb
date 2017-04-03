@@ -2,6 +2,12 @@
 
 <h1>Courses</h1>
 
+<%= form_tag('courses#index', method: 'get') do %>
+    <%= label_tag(:title, 'Search for Title:') %>
+    <%= text_field_tag(:title) %>
+    <%= submit_tag('Search') %>
+<% end %>
+
 <table>
   <thead>
     <tr>

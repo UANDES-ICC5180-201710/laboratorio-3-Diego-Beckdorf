@@ -4,6 +4,9 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.json
   def index
+    if params[:title]
+      put 'hola'
+    end
     @courses = Course.all
   end
 
